@@ -1,54 +1,52 @@
 .container {
-    margin: auto;
     height: 800px;
     width: 500; 
-    border: 10px solid;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.videoconsola1 {
-    background-color: aqua;
-    height: 550px;
+.videoconsola {
+    background-color: rgb(88, 213, 213);
+    height: 590px;
     width: 300px;
     border: 1px solid black;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     border-bottom-left-radius: 60px;
     border-bottom-right-radius: 60px;
+    box-shadow: 5px 5px 20px;
     position: relative;
     display: flex;
     justify-content:center;
-    box-shadow: 5px 5px 20px;
-    
 }
 
-   .borde {
+.borde {
     margin-top: 16px;
     background-color: rgb(53, 72, 58);
-    width: 250px;
+    width: 260px;
     height: 280px;
-    border: 30px solid black;
+    border: 35px solid black;
     border-bottom: 50px solid black;
     box-sizing: border-box;
     border-radius: 25px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
-
+/* mitad inferior videoconsola */
 .mandos{
     height: 550px;
-    width: 300px;
+    width: 320px;
     display: flex;
     position: absolute;
-   
-
 }
+
 .direction{
     position: absolute;
     left: 50px;
     top: 350px;
     display: flex;
-  
+    margin: auto;
 }
 
 #centro{
@@ -57,38 +55,33 @@
     background-color: rgb(95, 91, 91);
     height: 1em;
     width: 1em;
-    position: absolute;
-    top: 20px;
-    left: 17px;
-   
+    position: relative;
+    top: 30px;
+    left: 20px;
 }
 
-#centro p {
+#centro p, #abajo p, #arriba p, 
+#izquierda p, #derecha p{
 margin: auto;
-position: relative;
 text-align: center;
 }
 
 #abajo {
-height: 1em;
-width: 1em;
-background-color: rgb(95, 91, 91);
-border: 1px solid;
-border-top: none;
-box-shadow: 1px 1px 5px;
-bottom: 100px;
-border-radius: 20%;
-position: absolute;
-top: 37px;
-left: 17px;
-}
-
-#abajo p {
-    margin: auto;
+    height: 1em;
+    width: 1em;
+    background-color: rgb(95, 91, 91);
+    border: 1px solid;
+    border-top: none;
+    box-shadow: 1px 1px 5px;
+    bottom: 100px;
+    border-radius: 20%;
+    position: absolute;
+    top: 48px;
+    left: 20px;
 }
 
 #derecha{
-   height: 1em;
+    height: 1em;
     width: 1em;
     background-color:  rgb(95, 91, 91);
     border: 1px solid;
@@ -96,11 +89,8 @@ left: 17px;
     box-shadow: 1px -1px 5px;
     border-radius: 20%;
     position: absolute;
-    left: 34px;
-    top: 20px;
-}
-#derecha p {
-    margin: auto;
+    left: 38px;
+    top: 30px;
 }
 
 #izquierda {
@@ -111,11 +101,8 @@ left: 17px;
     border-right: none;
     border-radius: 20%;
     position: absolute;
-    top: 20px;
-    left: 0px;
-}
-#izquierda p {
-    margin: auto;
+    top: 30px;
+    left: 3px;
 }
 
 #arriba {
@@ -129,29 +116,16 @@ left: 17px;
     top: 500px;
     border-radius: 20%;
     position: absolute;
-    top: 3px;
-    left: 17px;
- 
-}
-#arriba p {
-    margin: auto;
-    position: relative;
-    text-align: center;
-    
+    top: 13px;
+    left: 20px;
 }
 
-
-
-
-
-
-
+/* botones A y B */
 .botones{
     position: absolute;
     display: flex;
     right: 50px;
     top: 350px;
-    
 }
 
 #a {
@@ -162,22 +136,21 @@ left: 17px;
     text-align: center;
     background-color: rgb(95, 91, 91);
     position: absolute;
-    right: 45px;
-    top: 15px;
+    right: 40px;
+    top: 40px;
     box-shadow: 1px 1px 5px;
-    
-    
-    
 }
+
 #b {
     width: 30px;
     height: 30px;
     border-radius: 50px;
     border: 1px solid;
+    top: 15px;
     text-align: center;
     background-color: rgb(95, 91, 91);
     position: absolute;
-    right: 0px;
+    right: 5px;
     box-shadow: 1px 1px 5px;
 }
 
@@ -188,10 +161,11 @@ left: 17px;
     text-shadow: 0px 0px 5px;
 }
 
+/* botones inferiores */
 .selectstart {
     position: absolute;
     display: flex;
-    top: 450px;
+    top: 485px;
 }
 
 #select {
@@ -207,6 +181,7 @@ left: 17px;
     font-size: 1em;
     text-align: center;
 }
+
 #start {
     height: 5px;
     width: 30px;
@@ -224,25 +199,46 @@ left: 17px;
     #select p, #start p {
         font-size: 10px;
         margin-top: 20px;
-        color: gray;
-
+        color: rgb(104, 93, 93);
     }
+
     .nintendo {
         position: absolute;
         display: flex;
-        top: 300px;
+        top: 315px;
         width: 70px;
         height: 12px;
-        border: 1px solid gray;
+        border: 1px solid  rgb(58, 174, 197);
         border-radius: 30px;
+        box-shadow: -1px -1px 5px;
     }
 
     .nintendo>p {
-        font-size: 12px;
-        color: gray;
+        font-size: 8px;
+        color: rgb(58, 174, 197);
         text-align: center;
         margin: auto;
+        margin-top: 1px;
+        text-shadow: -1px -1px 5px;
     }
+
+    /* Altavoz inferior */
+    .sonido {
+        position: absolute;
+        display: flex;
+        top: 425px;
+    }
+
+    .sonido>p {
+    left: 100px;
+    position: relative;
+    line-height: 20px;
+    text-shadow: 5px 10px 0px;
+        
+    }
+
+
+
 
 
 
