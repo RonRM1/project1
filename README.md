@@ -15,6 +15,9 @@ Utilizamos box-sizing: border-box para no afectar bordes y margenes.
 
 y se añadio sombreado al texto y botones de mando con shadow-box.
 
+Direccion en Web
+http://127.0.0.1:5501/index.html
+
 
 
 
